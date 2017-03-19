@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Lab 3 - Petshop", "05 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Lab 4 - Flight", "06 - Lab 4 - Flight", "{1ABE32C2-C263-4A41-A912-87346731A6EC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 - Lab 5 - MovieRental", "07 - Lab 5 - MovieRental", "{C70ADC0F-A123-4E3B-B01B-FE0954138C41}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 - Lab 5 - MovieRental", "08 - Lab 5 - MovieRental", "{C70ADC0F-A123-4E3B-B01B-FE0954138C41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceBook.Tests", "02 - Lab 1 - SpaceBook\SpaceBook.Tests\SpaceBook.Tests.csproj", "{BD0D40EA-949A-4721-B689-0556CCBC6EA1}"
 EndProject
@@ -45,11 +45,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight", "06 - Lab 4 - Flig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental", "07 - Lab 5 - MovieRental\MovieRental\MovieRental.csproj", "{27D340A0-B0D3-4C85-BB07-F4D9157D3449}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 - Lab 6 - Battle", "08 - Lab 6 - Battle", "{13A2F2D6-4255-47FB-8578-BFBD97033619}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 - Lab 6 - Battle", "09 - Lab 6 - Battle", "{13A2F2D6-4255-47FB-8578-BFBD97033619}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battle", "08 - Lab 6 - The Battle\Battle\Battle.csproj", "{7237E6CD-F92A-4D48-9AD2-D53BF04A0AAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battle.Tests", "08 - Lab 6 - The Battle\Battle.Tests\Battle.Tests.csproj", "{2C06E707-9B05-48EC-B4A5-9C02F0EE943E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 - Demo 3 - Refactoring", "07 - Demo 3 - Refactoring", "{A5EB32B9-26C5-4177-B5C2-1C3493D8913B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refactoring", "07 - Demo 3 - Refactoring\Refactoring\Refactoring.csproj", "{0332E488-4E43-404E-A173-D23B88F4C8BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refactoring.Tests", "07 - Demo 3 - Refactoring\Refactoring.Tests\Refactoring.Tests.csproj", "{5B079FC2-F23B-43F5-BDF5-02DD9E717876}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +127,14 @@ Global
 		{2C06E707-9B05-48EC-B4A5-9C02F0EE943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C06E707-9B05-48EC-B4A5-9C02F0EE943E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C06E707-9B05-48EC-B4A5-9C02F0EE943E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0332E488-4E43-404E-A173-D23B88F4C8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0332E488-4E43-404E-A173-D23B88F4C8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0332E488-4E43-404E-A173-D23B88F4C8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0332E488-4E43-404E-A173-D23B88F4C8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B079FC2-F23B-43F5-BDF5-02DD9E717876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B079FC2-F23B-43F5-BDF5-02DD9E717876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B079FC2-F23B-43F5-BDF5-02DD9E717876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B079FC2-F23B-43F5-BDF5-02DD9E717876}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,5 +156,7 @@ Global
 		{27D340A0-B0D3-4C85-BB07-F4D9157D3449} = {C70ADC0F-A123-4E3B-B01B-FE0954138C41}
 		{7237E6CD-F92A-4D48-9AD2-D53BF04A0AAA} = {13A2F2D6-4255-47FB-8578-BFBD97033619}
 		{2C06E707-9B05-48EC-B4A5-9C02F0EE943E} = {13A2F2D6-4255-47FB-8578-BFBD97033619}
+		{0332E488-4E43-404E-A173-D23B88F4C8BB} = {A5EB32B9-26C5-4177-B5C2-1C3493D8913B}
+		{5B079FC2-F23B-43F5-BDF5-02DD9E717876} = {A5EB32B9-26C5-4177-B5C2-1C3493D8913B}
 	EndGlobalSection
 EndGlobal

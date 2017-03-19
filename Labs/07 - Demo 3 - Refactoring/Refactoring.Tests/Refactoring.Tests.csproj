@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C06E707-9B05-48EC-B4A5-9C02F0EE943E}</ProjectGuid>
+    <ProjectGuid>{5B079FC2-F23B-43F5-BDF5-02DD9E717876}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Battle.Tests</RootNamespace>
-    <AssemblyName>Battle.Tests</AssemblyName>
+    <RootNamespace>Refactoring.Tests</RootNamespace>
+    <AssemblyName>Refactoring.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -64,17 +64,25 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="DecomposeConditional\TireChangeTest.cs" />
+    <Compile Include="ExtractMethod\PersonTest.cs" />
+    <Compile Include="IntroduceParameterObject\AccountTest.cs" />
+    <Compile Include="MoveMethod\AccountTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenameMethod\PersonTest.cs" />
+    <Compile Include="ReplaceTempWithQuery\ProductPriceTest.cs" />
+    <Compile Include="ReplaceTypeWithStrategy\EmployeeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Battle\Battle.csproj">
-      <Project>{7237e6cd-f92a-4d48-9ad2-d53bf04a0aaa}</Project>
-      <Name>Battle</Name>
+    <ProjectReference Include="..\Refactoring\Refactoring.csproj">
+      <Project>{0332e488-4e43-404e-a173-d23b88f4c8bb}</Project>
+      <Name>Refactoring</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

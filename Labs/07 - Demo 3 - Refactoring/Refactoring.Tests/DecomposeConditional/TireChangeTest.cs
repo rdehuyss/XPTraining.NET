@@ -1,10 +1,9 @@
-﻿
-using NUnit.Framework;
-using Refactoring.DecomposeConditional;
+﻿using Refactoring.DecomposeConditional;
+using Xunit;
+using FluentAssertions;
 
 namespace Refactoring.Tests.DecomposeConditional
 {
-    [TestFixture]
     public class TireChangeTest
     {
         private const int SUMMERRATE = 20;
@@ -13,28 +12,28 @@ namespace Refactoring.Tests.DecomposeConditional
         private const int QUANTITY = 2;
         private TireChange tireChange;
 
-        [SetUp]
-        public void SetUp()
+        public TireChangeTest()
         {
             tireChange = new TireChange(QUANTITY, WINTERRATE, WINTERSERVICECHARGE, SUMMERRATE);
         }
 
-        [TestCase(1, QUANTITY * WINTERRATE + WINTERSERVICECHARGE)]
-        [TestCase(2, QUANTITY * WINTERRATE + WINTERSERVICECHARGE)]
-        [TestCase(3, QUANTITY * SUMMERRATE)]
-        [TestCase(4, QUANTITY * SUMMERRATE)]
-        [TestCase(5, QUANTITY * SUMMERRATE)]
-        [TestCase(6, QUANTITY * SUMMERRATE)]
-        [TestCase(7, QUANTITY * SUMMERRATE)]
-        [TestCase(8, QUANTITY * SUMMERRATE)]
-        [TestCase(9, QUANTITY * SUMMERRATE)]
-        [TestCase(10, QUANTITY * SUMMERRATE)]
-        [TestCase(11, QUANTITY * SUMMERRATE)]
-        [TestCase(12, QUANTITY * WINTERRATE + WINTERSERVICECHARGE)]
+        [Theory]
+        [InlineData(1, QUANTITY * WINTERRATE + WINTERSERVICECHARGE)]
+        [InlineData(2, QUANTITY * WINTERRATE + WINTERSERVICECHARGE)]
+        [InlineData(3, QUANTITY * SUMMERRATE)]
+        [InlineData(4, QUANTITY * SUMMERRATE)]
+        [InlineData(5, QUANTITY * SUMMERRATE)]
+        [InlineData(6, QUANTITY * SUMMERRATE)]
+        [InlineData(7, QUANTITY * SUMMERRATE)]
+        [InlineData(8, QUANTITY * SUMMERRATE)]
+        [InlineData(9, QUANTITY * SUMMERRATE)]
+        [InlineData(10, QUANTITY * SUMMERRATE)]
+        [InlineData(11, QUANTITY * SUMMERRATE)]
+        [InlineData(12, QUANTITY * WINTERRATE + WINTERSERVICECHARGE)]
         public void TireCharge(int month, int expectedResult)
         {
             var charge = tireChange.Charge(month);
-            Assert.AreEqual(expectedResult, charge);
+            charge.Should().Be(expectedResult);
         }
         
     }

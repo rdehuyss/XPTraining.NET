@@ -1,18 +1,18 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
+using FluentAssertions;
 
 namespace MovieRental.Tests
 {
-    [TestFixture]
     public class CustomerTest
     {
-        [Test]
+        [Fact]
         public void Name_ReturnsNameOfCustomer()
         {
             var c = new Customer("David");
-            Assert.AreEqual("David", c.Name);
+            c.Name.Should().Be("David");
         }
 
-        [Test]
+        [Fact]
         public void RegularMovie_ReturnsCorrectStatement()
         {
             var customer2 = new Customer("Sallie");
@@ -24,10 +24,10 @@ namespace MovieRental.Tests
                                 "Amount owed is 3.5\n" +
                                 "You earned 1 frequent renter points";
             var statement = customer2.Statement();
-            Assert.AreEqual(expected, statement);
+            statement.Should().Be(expected);
         }
 
-        [Test]
+        [Fact]
         public void NewReleaseMovie_ReturnsCorrectStatement()
         {
             var customer2 = new Customer("Sallie");
@@ -39,10 +39,10 @@ namespace MovieRental.Tests
                                 "Amount owed is 9.0\n" +
                                 "You earned 2 frequent renter points";
             var statement = customer2.Statement();
-            Assert.AreEqual(expected, statement);
+            statement.Should().Be(expected);
         }
 
-        [Test]
+        [Fact]
         public void ChildrensMovie_ReturnsCorrectStatement()
         {
             var customer2 = new Customer("Sallie");
@@ -54,10 +54,10 @@ namespace MovieRental.Tests
                                 "Amount owed is 1.5\n" +
                                 "You earned 1 frequent renter points";
             var statement = customer2.Statement();
-            Assert.AreEqual(expected, statement);
+            statement.Should().Be(expected);
         }
 
-        [Test]
+        [Fact]
         public void ManyMovies_ReturnsCorrectStatement()
         {
             var customer1 = new Customer("David");
@@ -77,7 +77,7 @@ namespace MovieRental.Tests
                                 "Amount owed is 23.0\n" +
                                 "You earned 4 frequent renter points";
             var statement = customer1.Statement();
-            Assert.AreEqual(expected, statement);
+            statement.Should().Be(expected);
         }
     }
 }

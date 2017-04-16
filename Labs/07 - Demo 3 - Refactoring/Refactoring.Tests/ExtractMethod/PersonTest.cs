@@ -1,20 +1,20 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
+using FluentAssertions;
 using Refactoring.ExtractMethod;
 
 namespace Refactoring.Tests.ExtractMethod
 {
-    [TestFixture]
     public class PersonTest
     {
         
-        [Test]
+        [Fact]
         public void TestPrintOwing()
         {
             var person = new Person("Bert");
 
             var result = person.PrintOwing(8.0);
 
-            Assert.AreEqual("Person has: name: Bert, amount: 8", result);
+            result.Should().Be("Person has: name: Bert, amount: 8");
         }
     }
 }

@@ -1,12 +1,11 @@
-﻿using FluentAssertions;
-using NUnit.Framework;
+﻿using Xunit;
+using FluentAssertions;
 
 namespace PetShop.Tests
 {
-    [TestFixture]
     public class ShopTest
     {
-        [Test]
+        [Fact]
         public void AddItemToStock()
         {
             var shop = new Shop();

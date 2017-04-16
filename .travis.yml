@@ -7,7 +7,7 @@ dotnet: 1.0.1
 script:    
   - dotnet restore "./Labs/01 - Demo 1 - Delayed/Delayed.Tests/Delayed.Tests.csproj"
   - dotnet test "./Labs/01 - Demo 1 - Delayed/Delayed.Tests/Delayed.Tests.csproj"
-  - dotnet restore "./Labs/02 - Lab 1 - SpaceBookd/SpaceBook.Tests/SpaceBook.Tests.csproj"
+  - dotnet restore "./Labs/02 - Lab 1 - SpaceBook/SpaceBook.Tests/SpaceBook.Tests.csproj"
   - dotnet test "./Labs/02 - Lab 1 - SpaceBook/SpaceBook.Tests/SpaceBook.Tests.csproj"
   - dotnet restore "./Labs/03 - Lab 2 - Bugfix Dracula/VampireSlayer.Tests/VampireSlayer.Tests.csproj"
   - dotnet test "./Labs/03 - Lab 2 - Bugfix Dracula/VampireSlayer.Tests/VampireSlayer.Tests.csproj"
